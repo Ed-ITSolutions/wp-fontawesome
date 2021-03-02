@@ -1,0 +1,20 @@
+{
+  "name": "ed-itsolutions/wp-fontawesome",
+  "description": "Simple easy to bundle font-awesome for WordPress",
+  "require": {
+    "php": "^5.3.3 || ^7.0",
+    "fortawesome/font-awesome": "^5.15"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adam Laycock",
+      "email": "adam@arcath.net",
+      "homepage": "https://www.arcath.net",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": ["fontawesome.php"]
+  }
+}
