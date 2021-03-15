@@ -1,6 +1,6 @@
 # WP-FontAwesome
 
-WP-FontAwesome adds Font Awesome to WordPress form Composer.
+WP-FontAwesome adds Font Awesome to WordPress from Composer.
 
 The main reason for this is to help with dependencies. Instead of having Font Awesome bundled in both a theme and composer module this allows both to require a single module which by registering the styles/scripts itself means no overlap between multiple installs.
 
