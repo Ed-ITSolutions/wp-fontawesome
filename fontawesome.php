@@ -9,16 +9,33 @@ function wp_fontawesome_get_base_url(){
   return $url;
 }
 
+function wp_fontawesome_get_base_path(){
+  $base = get_template_directory();
+
+
+  return $base . '/vendor/ed-itsolutions/wp-fontawesome';
+}
+
 function wp_fontawesome_register_font_awesome(){
   $basePath = apply_filters('wp_fontawesome_base_url', wp_fontawesome_get_base_url());
 
   wp_register_script(
     'font-awesome',
-    $basePath . '/vendor/fortawesome/font-awesome/js/all.js',
+    dirname(dirname($basePath)) . '/fortawesome/font-awesome/js/all.js',
     array(),
     '5.15.2',
 		true
   );
+}
+
+function wp_fontawesome_get_icons(){
+  $basePath = apply_filters('wp_fontawesome_base_path', wp_fontawesome_get_base_path());
+  $fontAwesomePath = dirname(dirname($basePath)) . '/fortawesome/font-awesome';
+
+  $json = file_get_contents($fontAwesomePath . '/metadata/icons.json');
+  $icons = json_decode($json, true);
+
+  return $icons;
 }
 
 add_action('init', 'wp_fontawesome_register_font_awesome');
