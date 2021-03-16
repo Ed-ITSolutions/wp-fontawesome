@@ -38,4 +38,6 @@ function wp_fontawesome_get_icons(){
   return $icons;
 }
 
-add_action('init', 'wp_fontawesome_register_font_awesome');
+if(function_exists('add_action')){
+  add_action('init', 'wp_fontawesome_register_font_awesome');
+}
