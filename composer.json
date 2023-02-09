@@ -2,15 +2,15 @@
   "name": "ed-itsolutions/wp-fontawesome",
   "description": "Simple easy to bundle font-awesome for WordPress",
   "require": {
-    "php": "^5.3.3 || ^7.0",
-    "fortawesome/font-awesome": "^5.15"
+    "php": ">5.3.3",
+    "fortawesome/font-awesome": "^6.3"
   },
   "license": "MIT",
   "authors": [
     {
       "name": "Adam Laycock",
-      "email": "adam@arcath.net",
-      "homepage": "https://www.arcath.net",
+      "email": "adam@alaycock.co.uk",
+      "homepage": "https://www.alaycock.co.uk",
       "role": "Developer"
     }
   ],
